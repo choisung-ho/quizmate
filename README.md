@@ -54,6 +54,6 @@ npm test
 
 ## 배포 구성
 
-Cloudflare Worker와 Sites 설정을 유지합니다. `app/chatgpt-auth.ts`의 로그인 도우미는 Sites 인증 헤더에 의존하는 선택적 구성입니다. 일반 로컬 실행에서 ChatGPT 로그인 기능을 제공하지는 않습니다.
+Cloudflare Worker용 실행 진입점을 제공합니다. D1 데이터베이스를 사용하려면 Worker 환경에 `DB` 바인딩을 설정합니다. `app/chatgpt-auth.ts`의 로그인 도우미는 Sites 인증 헤더에 의존하는 선택적 구성입니다. 일반 로컬 실행에서 ChatGPT 로그인 기능을 제공하지는 않습니다.
 
 실제 노션 토큰·개인 노트·로컬 캐시·빌드 결과물은 소스에서 제외합니다.

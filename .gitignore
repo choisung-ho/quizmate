@@ -69,3 +69,7 @@ output/
 outputs/
 reports/
 .pytest_cache/
+
+# Local hosting metadata
+.openai/
+.cloud/
